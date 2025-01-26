@@ -15,4 +15,4 @@ Starte die App auf dem gewählten Endgerät. Am oberen Bildschirmrand findest du
 Nachdem du den 🌳-Knopf drückst, startet die App mit dem Update. Dies kann einige Augenblicke dauern.
 
 ## Schlusswort
-Sobald ein Update einmal durchgeführt wurde, kann man die aktuelle Version öffnen, indem man auf den 🌳-Knopf drückt. Um eine neue Version aufzuspielen, wiederhole einfach den Update-Prozess.
+Sobald das erste Update einmal durchgeführt wurde, kann man die aktuelle Version öffnen, indem man auf den 🌳-Knopf drückt. Um eine neue Version aufzuspielen, wiederhole einfach den Update-Prozess.
