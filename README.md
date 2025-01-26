@@ -8,13 +8,13 @@ Ein weiterer wichtiger Aspekt bei der Entwicklung war, die [Bearbeitung](https:/
 
 Dieses Programm ist unter der [MIT](https://github.com/c-smo/TalkTree-App/blob/main/LICENSE.md) Lizenz veröffentlicht und daher kostenfrei erhältlich. Mein Ziel ist es jedem Menschen die Möglichkeit zu schaffen, ein ganz persönliches Bäumchen zu pflanzen 🌱
 
-Diese Version ist für Endgeräte gedacht. Informationen zur Bearbeitungssoftware **"TalkTree Editor"** findest du [hier](https://github.com/c-smo/TalkTree-Edit/blob/main/TalkTree_Edit).
+Diese Version ist für Endgeräte gedacht. Informationen zur Bearbeitungssoftware **"TalkTree Editor"** findest du [hier](https://github.com/c-smo/TalkTree-Edit).
 
 ---
 
 ## Download:
 
-- [TalkTree App | Android](URL)
+- [TalkTree App | Android](https://github.com/c-smo/TalkTree-App/releases/download/v0.1.0/TalkTree.App_v0.1.0_android.apk)
 
 - ~~[TalkTree App | iOS](URL)~~ _to-do_
 
