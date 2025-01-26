@@ -1,0 +1,1 @@
+This is a Fork of [tauri-plugin-tts](https://github.com/httpjamesm/tauri-plugin-tts)

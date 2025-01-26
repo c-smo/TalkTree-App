@@ -1,0 +1,10 @@
+dist
+node_modules/
+npm-debug.log*
+.DS_Store
+x.md
+.dev/
+.vscode
+.github/*
+src-tauri/target
+.dev

@@ -1,0 +1,32 @@
+{
+  "name": "talktree_app",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "sign": "node ./.dev/sign.js",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "tauri": "tauri"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-sql": "^2.2.0",
+    "@tauri-apps/plugin-websocket": "^2.2.1",
+    "hash.js": "^1.1.7",
+    "msgpackr": "^1.11.2",
+    "solid-js": "^1.9.3",
+    "tauri-plugin-tts": "file:./src-tauri/plugins/tauri-plugin-tts/guest-js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "chalk": "^5.4.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}
