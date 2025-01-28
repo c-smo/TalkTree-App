@@ -14,7 +14,9 @@ Diese Version ist für Endgeräte gedacht. Informationen zur Bearbeitungssoftwar
 
 
 ## Download:
-**Bitte stelle sicher, dass sich beide Programme (App und Editor) auf der gleichen Version befinden. Aktuelle Version: v0.2.0**
+**Aktuelle Version: v0.2.0**
+
+Bitte stelle sicher, dass sich beide Programme (App und Editor) auf der gleichen Version befinden. 
 
 ---
 
