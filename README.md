@@ -12,6 +12,7 @@ Diese Version ist für Endgeräte gedacht. Informationen zur Bearbeitungssoftwar
 
 ---
 
+
 ## Download:
 
 - [TalkTree App | Android](https://github.com/c-smo/TalkTree-App/releases/download/v0.1.0/TalkTree.App_v0.1.0_android.apk)
