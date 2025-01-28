@@ -13,7 +13,7 @@ export const Welcome_Screen = () => {
           type="text"
           value={INPUT_VALUE()}
           onInput={(e) => SET_INPUT_VALUE(e.currentTarget.value)}
-          placeholder="Server-ID..."
+          placeholder="Baum-ID..."
           class="text-input"
         />
         <Load_Button />
