@@ -8,6 +8,8 @@ import { msgpackr_decode_settings } from "./utils/msgpackr";
 
 export const TABLE_NAMES = ["buttons", "images", "audio", "settings"] as const;
 
+export const [UPDATE_AMOUNT,SET_UPDATE_AMOUNT] = createSignal(0)
+
 export const [CELLS, SET_CELLS] = createSignal<number[]>([]);
 
 export const [SHOW_WELCOME, SET_SHOW_WELCOME] = createSignal(true);
@@ -21,9 +23,6 @@ export const [CURRENT_SHEET, SET_CURRENT_SHEET] = createSignal("home");
 export const [CURRENT_PROPS, SET_CURRENT_PROPS] = createSignal(
   [] as TTSButton[],
 );
-
-export const [UPDATES, SET_UPDATES] = createSignal(0);
-
 export let DB: Database;
 
 export const SETTINGS: Settings = {

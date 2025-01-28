@@ -1,5 +1,4 @@
 import frontend_update from "../_frontend_/frontend_update";
-import { SET_UPDATES, UPDATES } from "../globals";
 import { sql_upsert_wrapper } from "../sql/sql_upsert_wrapper";
 import { err } from "../terminal/commands/logs";
 import { SqlWrapper } from "../types";
@@ -22,9 +21,7 @@ const update = async () => {
     const wrapper = Q.shift();
     if (wrapper) {
       try {
-        SET_UPDATES(UPDATES() - 1);
         await sql_upsert_wrapper(wrapper);
-        console.log("Updated left:", UPDATES());
       } catch (error) {
         err(error);
         continue;
@@ -36,7 +33,6 @@ const update = async () => {
 
 const on_completed = async () => {
   isIdle = true;
-  console.log("no more updates?", Q, UPDATES());
   if (Q.length === 0) {
     try {
       await set_border_highlight({ visible: false });

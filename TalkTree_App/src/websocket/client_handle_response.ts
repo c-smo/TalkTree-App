@@ -1,8 +1,9 @@
 import {
+  CURRENT_PROPS,
   globals_init_settings,
   SET_SHOW_WELCOME,
-  SET_UPDATES,
-  UPDATES,
+  SET_UPDATE_AMOUNT,
+  UPDATE_AMOUNT,
 } from "../globals";
 import { err } from "../terminal/commands/logs";
 import { SqlWrapper } from "../types";
@@ -15,6 +16,7 @@ const handle_response = (server_response: string) => {
   const map = {
     sql_info: handle_info,
     sql_update: handle_update,
+    sql_total: handle_total,
     greet: handle_greeting,
   };
 
@@ -27,6 +29,10 @@ const handle_response = (server_response: string) => {
   }
 };
 
+const handle_total = async (total_amount: string) => {
+  SET_UPDATE_AMOUNT(Number(total_amount))
+}
+
 const handle_greeting = async (encoded_settings: string): Promise<void> => {
   await globals_init_settings(encoded_settings);
   SET_SHOW_WELCOME(false);
@@ -37,7 +43,6 @@ const handle_info = async (info: string) => {
   const allKeys = info.split(",") as string[];
   const table_name = allKeys.shift() as string;
 
-  SET_UPDATES(UPDATES() + allKeys.length);
   await set_border_highlight({ visible: true });
 
   for (let key of allKeys) {
@@ -49,6 +54,11 @@ const handle_info = async (info: string) => {
 
 const handle_update = async (update: string) => {
   const data = update.split(",");
+  SET_UPDATE_AMOUNT(UPDATE_AMOUNT() - 1)
+  const current_props = CURRENT_PROPS()
+  const index = Math.floor((current_props.length-1) / 2)
+  current_props[index].symbol = `${UPDATE_AMOUNT()}` 
+
   const wrapper: SqlWrapper = {
     table_name: `${data.shift()}`,
     key: `${data.shift()}`,
