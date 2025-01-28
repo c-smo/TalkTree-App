@@ -14,7 +14,9 @@ Diese Version ist für Endgeräte gedacht. Informationen zur Bearbeitungssoftwar
 
 
 ## Download:
-### Bitte stelle sicher, dass sich beide Programme (App und Editor) auf der gleichen Version befinden. Aktuelle Version: v0.2.0
+**Bitte stelle sicher, dass sich beide Programme (App und Editor) auf der gleichen Version befinden. Aktuelle Version: v0.2.0**
+
+---
 
 - [TalkTree App | Android](https://github.com/c-smo/TalkTree-App/releases/download/v0.2.0/TalkTree-App_v0.2.0_android.apk)
 
