@@ -8,7 +8,7 @@ import { msgpackr_decode_settings } from "./utils/msgpackr";
 
 export const TABLE_NAMES = ["buttons", "images", "audio", "settings"] as const;
 
-export const [UPDATE_AMOUNT,SET_UPDATE_AMOUNT] = createSignal(0)
+export const [UPDATE_AMOUNT, SET_UPDATE_AMOUNT] = createSignal(0);
 
 export const [CELLS, SET_CELLS] = createSignal<number[]>([]);
 

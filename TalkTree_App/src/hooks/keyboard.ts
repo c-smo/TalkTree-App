@@ -4,7 +4,7 @@ const keyboard_hooks_init = () => {
   document.body.addEventListener("keydown", async (e) => {
     const map = {
       Enter: async () => {
-        handle_click()
+        handle_click();
       },
     };
     const key = e.key as keyof typeof map;

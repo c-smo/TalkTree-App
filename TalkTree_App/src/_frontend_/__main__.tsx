@@ -17,7 +17,7 @@ export const cells: number[] = [];
 export function App() {
   onMount(async () => {
     SET_CURRENT_PROPS(get_ghost_array());
-    keyboard_hooks_init()
+    keyboard_hooks_init();
     await globals_init_db().catch((e) => err(e));
     SET_SHOW_WELCOME(true);
   });

@@ -19,30 +19,30 @@ export function Load_Button() {
   );
 }
 
- export const handle_click = async () => {
-    const ip = `${INPUT_VALUE()}:8080`;
-    try {
-      const connected = await client_connect(ip).catch();
-      if (connected) {
-        await validate_db_tables(true);
-        // Logic continues @
-        // client_handle_resonse.ts
-        // handle_greeting()
-      } else {
-        const exists = await old_data_exists().catch((e) => err(e));
-        if (exists) {
-          await _frontend_init_();
-          SET_SHOW_WELCOME(false);
-          await validate_db_tables(false);
-          await frontend_update();
-        }
+export const handle_click = async () => {
+  const ip = `${INPUT_VALUE()}:8080`;
+  try {
+    const connected = await client_connect(ip).catch();
+    if (connected) {
+      console.log("connected");
+      // Logic continues @
+      // client_handle_resonse.ts
+      // handle_greeting()
+    } else {
+      const exists = await old_data_exists().catch((e) => err(e));
+      if (exists) {
+        await _frontend_init_();
+        SET_SHOW_WELCOME(false);
+        await validate_db_tables(false);
+        await frontend_update();
       }
-    } catch (error) {
-      console.error(error);
     }
+  } catch (error) {
+    console.error(error);
+  }
 
-    SET_INPUT_VALUE("");
-  };
+  SET_INPUT_VALUE("");
+};
 
 const old_data_exists = async () => {
   const key = sql_get_key("home");

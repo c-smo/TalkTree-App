@@ -9,8 +9,8 @@ const Button_Symbol = (props: { index: number; is_clicked: () => boolean }) => {
         <img
           class="button-symbol"
           style={{
-            width: `${Math.min(GRID.cell_height,GRID.cell_width) === GRID.cell_width ?`${100}%` :"auto"}`,
-            height: `${Math.min(GRID.cell_height,GRID.cell_width) === GRID.cell_height ?`${100}%` :"auto"}`,
+            width: `${Math.min(GRID.cell_height, GRID.cell_width) === GRID.cell_width ? `${100}%` : "auto"}`,
+            height: `${Math.min(GRID.cell_height, GRID.cell_width) === GRID.cell_height ? `${100}%` : "auto"}`,
           }}
           src={CURRENT_PROPS()[props.index].symbol}
         />
@@ -33,7 +33,7 @@ function get_font_size(data: TTSButton): number {
   const MAX_WIDTH = 0.7;
   const MIN_FONT_SIZE = 5;
   const symbol = data.symbol;
-  let font_size = GRID.cell_height  * 0.5;
+  let font_size = GRID.cell_height * 0.5;
   let text_width = get_text_width(symbol, font_size);
 
   while (
@@ -43,7 +43,6 @@ function get_font_size(data: TTSButton): number {
     font_size -= 1;
     text_width = get_text_width(symbol, font_size);
   }
-  console.log({symbol: data.symbol, font_size})
   return font_size;
 }
 
