@@ -1,13 +1,13 @@
 # Updates
 
 ## 1. Server aktivieren
-Um Updates zu ermöglichen, muss der [Server](https://github.com/c-smo/TalkTree-Edit/blob/main/TalkTree_Edit/Anleitungen/Einstellungen/Server.md) aktiviert sein.
+Um Updates zu ermöglichen, muss der [Server](https://github.com/c-smo/TalkTree-Edit/blob/main/TalkTree_Edit/Anleitungen/Einstellungen/Baum-ID.md) aktiviert sein.
 
 ## 2. Netzwerk
-Stelle sicher, dass sich beide Geräte im selben Netzwerk befinden.
+Stelle sicher, dass sich beide Geräte im selben lokalen Netzwerk befinden (z.B. dein W-Lan).
 
 ## 3. Initialisierung
-Starte die App auf dem gewählten Endgerät. Am oberen Bildschirmrand findest du ein Kästchen mit dem Text **"Server-ID"**. Wähle dieses Kästchen aus und füge deine [Server-ID](https://github.com/c-smo/TalkTree-Edit/blob/main/TalkTree_Edit/Anleitungen/Einstellungen/Server.md) ein.
+Starte die App auf dem gewählten Endgerät. Am oberen Bildschirmrand findest du ein Kästchen mit dem Text **"Baum-ID"**. Wähle dieses Kästchen aus und füge deine [Baum-ID](https://github.com/c-smo/TalkTree-Edit/blob/main/TalkTree_Edit/Anleitungen/Einstellungen/Baum-ID.md) ein.
 
    <img src="./preview_update.png" alt="preview" width="405" height="900">
 
