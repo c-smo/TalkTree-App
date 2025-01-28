@@ -32,6 +32,4 @@ export function create_grid() {
   gc.style.height = `calc(100vh - ${margin * 2}px)`;
   gc.style.margin = `${margin}px`;
   gc.style.gap = `${margin}px`;
-
-  console.log(GRID);
 }

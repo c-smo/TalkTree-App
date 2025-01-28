@@ -24,7 +24,6 @@ export const handle_click = async () => {
   try {
     const connected = await client_connect(ip).catch();
     if (connected) {
-      console.log("connected");
       // Logic continues @
       // client_handle_resonse.ts
       // handle_greeting()
