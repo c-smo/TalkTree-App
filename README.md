@@ -20,7 +20,7 @@ Bitte stelle sicher, dass sich beide Programme (App und Editor) auf der gleichen
 
 ---
 
-- [TalkTree App | Android](https://github.com/c-smo/TalkTree-App/releases/download/v0.2.0/TalkTree-App_v0.2.0_android.apk)
+- [TalkTree App v0.2.0 | Android](https://github.com/c-smo/TalkTree-App/releases/download/v0.2.0/TalkTree-App_v0.2.0_android.apk)
 
 - ~~[TalkTree App | iOS](URL)~~ _to-do_
 
