@@ -1,6 +1,7 @@
 // ./src/components/Button/Button_Container.tsx
 import { CURRENT_PROPS, SETTINGS } from "../globals";
 import { Button_Design } from "./Button_Design";
+import { handle_mouse } from "./Button_Mouse";
 import Button_Symbol from "./Button_Symbol";
 import handle_touch from "./Button_Touch";
 
@@ -33,17 +34,17 @@ export const Button_Container = (props: {
         width: `${props.is_clicked() ? 90 : 100}%`,
         height: `${props.is_clicked() ? 90 : 100}%`,
       }}
-      // onMouseDown={(e) => {
-      //   handle_mouse(
-      //     e,
-      //     props.index,
-      //     props.set_is_dragging,
-      //     props.is_dragging,
-      //     props.set_pos,
-      //     props.set_z_index,
-      //     props.set_is_clicked,
-      //   );
-      // }}
+      onMouseDown={(e) => {
+        handle_mouse(
+          e,
+          props.index,
+          props.set_is_dragging,
+          props.is_dragging,
+          props.set_pos,
+          props.set_z_index,
+          props.set_is_clicked,
+        );
+      }}
       onTouchStart={(e) => {
         handle_touch(
           e,

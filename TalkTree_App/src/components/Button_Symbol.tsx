@@ -2,6 +2,7 @@ import { CURRENT_PROPS, SETTINGS } from "../globals";
 import { TTSButton } from "../types";
 import { GRID } from "../utils/grid";
 
+
 const Button_Symbol = (props: { index: number; is_clicked: () => boolean }) => {
   return (
     <>

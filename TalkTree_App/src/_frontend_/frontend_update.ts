@@ -3,6 +3,7 @@ import sql_get_key from "../sql/sql_get_key";
 import sql_read_uint8array from "../sql/sql_read_unit8array";
 import { err } from "../terminal/commands/logs";
 import { TTSButton } from "../types";
+import { set_grid_cell_size } from "../utils/grid";
 import { msgpackr_decode_tts_button } from "../utils/msgpackr";
 
 const frontend_update = async () => {
@@ -19,6 +20,7 @@ const frontend_update = async () => {
         buffer_array[button.button_index] = button;
       });
     }
+    set_grid_cell_size()
     SET_CURRENT_PROPS([...buffer_array]);
   } catch (error) {
     err(error);
