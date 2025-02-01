@@ -1,5 +1,7 @@
-import { createSignal } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 import { SETTINGS } from "../globals";
+import { GRID } from "../utils/grid";
+import { set_css_global } from "../utils/helpers";
 import { Button_Container } from "./_Button_Container";
 import Button_Subtitle from "./Button_Subtitle";
 
@@ -8,6 +10,13 @@ export const Cell = (props: { index: number }) => {
   const [pos, set_pos] = createSignal({ x: 0, y: 0 });
   const [z_index, set_z_index] = createSignal(0);
   const [is_clicked, set_is_clicked] = createSignal(false);
+
+  onMount(() => {
+    set_css_global(
+      "--global-subtitle-size",
+      `${Math.floor(GRID.cell_height * 0.2)}px`,
+    );
+  });
 
   return (
     <div

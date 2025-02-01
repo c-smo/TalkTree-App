@@ -55,7 +55,8 @@ const display_remaining = async () => {
 
 const on_completed = async () => {
   isIdle = true;
-  if (UPDATE_AMOUNT() === 0) {
+  console.log(UPDATE_AMOUNT())
+  if (UPDATE_AMOUNT() <= 0) {
     try {
       await set_border_highlight({ visible: false });
       await frontend_update();

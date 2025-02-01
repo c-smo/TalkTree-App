@@ -10,7 +10,6 @@ import {
 import keyboard_hooks_init from "../hooks/keyboard";
 import { err } from "../terminal/commands/logs";
 import Terminal from "../terminal/Terminal";
-import { set_grid_cell_size } from "../utils/grid";
 import { get_ghost_array } from "./frontend_update";
 
 export const cells: number[] = [];
@@ -20,7 +19,6 @@ export function App() {
     SET_CURRENT_PROPS(get_ghost_array());
     keyboard_hooks_init();
     await globals_init_db().catch((e) => err(e));
-    set_grid_cell_size();
     SET_SHOW_WELCOME(true);
   });
 

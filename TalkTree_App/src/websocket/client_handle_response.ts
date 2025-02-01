@@ -2,8 +2,8 @@ import {
   globals_init_settings,
   SET_SHOW_WELCOME,
   SET_UPDATE_AMOUNT,
+  UPDATE_AMOUNT,
 } from "../globals";
-import { err } from "../terminal/commands/logs";
 import { SqlWrapper } from "../types";
 import { set_border_highlight } from "../ui/border_highlight";
 import { client_main } from "./_client_main";
@@ -12,7 +12,6 @@ import client_push_update from "./client_update";
 
 const handle_response = (server_response: string) => {
   const map = {
-    sql_info: handle_info,
     sql_update: handle_update,
     sql_total: handle_total,
     greet: handle_greeting,
@@ -27,28 +26,26 @@ const handle_response = (server_response: string) => {
   }
 };
 
-const handle_total = async (total_amount: string) => {
-  SET_UPDATE_AMOUNT(Number(total_amount));
-  //console.info("Total Updates", UPDATE_AMOUNT())
-};
-
 const handle_greeting = async (encoded_settings: string): Promise<void> => {
   await globals_init_settings(encoded_settings);
   SET_SHOW_WELCOME(false);
   void client_main();
 };
 
-const handle_info = async (info: string) => {
-  const allKeys = info.split(",") as string[];
-  const table_name = allKeys.shift() as string;
+const handle_total = async (all_info_string: string) => {
+  const all_info = all_info_string.split(",")
+  const total_amount = all_info.length
+  SET_UPDATE_AMOUNT(total_amount);
+  set_border_highlight({visible:true})
 
-  await set_border_highlight({ visible: true });
+  for(let info of all_info){
+    const table = info.split("-")[0] === "a" ? "audio" : "buttons"
+    const key = info.split("-")[1]
+    await websocket_request("update",`${key}@${table}`)
 
-  for (let key of allKeys) {
-    await websocket_request("update", `${key}@${table_name}`).catch((e) =>
-      err(e),
-    );
   }
+  console.info("Total Updates", UPDATE_AMOUNT(), all_info)
+
 };
 
 const handle_update = async (update: string) => {
