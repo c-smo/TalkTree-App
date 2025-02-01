@@ -26,7 +26,7 @@
 ---
 
 ## **Schritt 3: APK-Datei herunterladen**
-1. Lade die [APK-Datei](https://github.com/c-smo/TalkTree-App/releases/download/v0.2.0/TalkTree-App_v0.2.0_android.apk) mit deinem Browser oder kopiere sie von einem Computer.
+1. Lade die [APK-Datei](https://github.com/c-smo/TalkTree-App/releases/download/v0.2.2/TalkTree-App_v0.2.2_android.apk) mit deinem Browser oder kopiere sie von einem Computer.
 2. Speichere die Datei in einem leicht zugänglichen Ordner, z. B. **Downloads**.
 
 ---

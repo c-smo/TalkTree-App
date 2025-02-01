@@ -4,9 +4,10 @@ import _frontend_init_ from "./_frontend_/_fontend_init_";
 import { sql_create_uint8array_table } from "./sql/sql_create_unit8array_table";
 import { err } from "./terminal/commands/logs";
 import { Settings, TTSButton } from "./types";
+import { set_css_global } from "./utils/helpers";
 import { msgpackr_decode_settings } from "./utils/msgpackr";
 
-export const TABLE_NAMES = ["buttons", "images", "audio", "settings"] as const;
+export const TABLE_NAMES = ["buttons", "audio", "settings"] as const;
 
 export const [UPDATE_AMOUNT, SET_UPDATE_AMOUNT] = createSignal(0);
 
@@ -31,6 +32,7 @@ export const SETTINGS: Settings = {
   aspect_ratio: "9:18",
   radius: 0.2,
   use_swipe: false,
+  emoji_size: 0.7,
   server_ip: "-",
   default_colors: {
     background: "#2c3e50",
@@ -45,15 +47,9 @@ export const globals_init_settings = async (
   const uint8Array = new Uint8Array(encoded_settings.split(",").map(Number));
   const settings = msgpackr_decode_settings(uint8Array);
   Object.assign(SETTINGS, { ...settings });
+  set_css_global("--global-emoji-size", `${100 * SETTINGS.emoji_size}%`);
+
   await _frontend_init_();
-};
-
-export const NEW_WORDS: string[] = [];
-
-export const globals_clear_new_words = () => {
-  while (NEW_WORDS.length) {
-    NEW_WORDS.shift();
-  }
 };
 
 export const globals_init_db = async (): Promise<void> => {

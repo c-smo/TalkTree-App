@@ -7,11 +7,12 @@ const Button_Symbol = (props: { index: number; is_clicked: () => boolean }) => {
     <>
       {CURRENT_PROPS()[props.index].symbol.includes("data:image/png;base64") ? (
         <img
-          class="button-symbol"
-          style={{
-            width: `${Math.min(GRID.cell_height, GRID.cell_width) === GRID.cell_width ? `${100}%` : "auto"}`,
-            height: `${Math.min(GRID.cell_height, GRID.cell_width) === GRID.cell_height ? `${100}%` : "auto"}`,
-          }}
+          class={
+            CURRENT_PROPS()[props.index].is_emoji
+              ? "button-symbol emoji"
+              : "button-symbol"
+          }
+          style={{}}
           src={CURRENT_PROPS()[props.index].symbol}
         />
       ) : (
@@ -33,7 +34,7 @@ function get_font_size(data: TTSButton): number {
   const MAX_WIDTH = 0.7;
   const MIN_FONT_SIZE = 5;
   const symbol = data.symbol;
-  let font_size = GRID.cell_height * 0.5;
+  let font_size = Math.min(GRID.cell_height, GRID.cell_width) * 0.5;
   let text_width = get_text_width(symbol, font_size);
 
   while (

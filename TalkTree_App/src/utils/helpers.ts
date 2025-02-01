@@ -43,3 +43,7 @@ export const inside_margin = (x: number, y: number): boolean => {
     y + h > window.innerHeight - m
   );
 };
+
+export const set_css_global = (name: string, value: string) => {
+  document.documentElement.style.setProperty(name, value);
+};

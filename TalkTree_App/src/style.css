@@ -6,6 +6,8 @@
 
 :root {
   --global-font-family: sans-serif;
+  --global-emoji-size: 70%;
+  --global-subtitle-size: 13px;
 }
 
 html,
@@ -49,9 +51,8 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.03);
   border: solid;
-  border-color: rgba(255,255,255,0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
-
 
 input:focus {
   outline: none;
@@ -152,7 +153,7 @@ button:disabled:hover {
 .button-subtitle {
   z-index: 2;
   width: 100%;
-  height: 23%;
+  height: 33%;
   box-shadow: inset -5px -5px 10px 1px rgba(0, 0, 0, 0.3);
   display: flex;
   text-align: center;
@@ -161,12 +162,8 @@ button:disabled:hover {
   overflow: hidden;
   text-overflow: clip;
   transform: none;
-}
-
-.subtitle-span {
-  position: absolute;
-  transform: none;
-  bottom: 0;
+  text-wrap: balance;
+  font-size: var(--global-subtitle-size);
 }
 
 .button-symbol {
@@ -176,4 +173,13 @@ button:disabled:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.emoji {
+  max-width: var(--global-emoji-size);
+  max-height: var(--global-emoji-size);
+}
+
+img {
+  max-width: 100%;
 }

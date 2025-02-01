@@ -6,13 +6,6 @@ export type Grid = {
   margin: number;
 };
 
-export type FsFile = {
-  fileName: string;
-  fileType: string;
-  binary: Uint8Array;
-  text?: string;
-};
-
 export type BorderPulseProps = {
   color: string;
   spread: number;
@@ -35,6 +28,7 @@ export type TTSButton = {
   color: string;
   link: string;
   button_index: number;
+  is_emoji: boolean;
 };
 
 export type Settings = {
@@ -43,6 +37,7 @@ export type Settings = {
   aspect_ratio: string;
   radius: number;
   use_swipe: boolean;
+  emoji_size: number;
   server_ip: string;
   default_colors: {
     background: string;
@@ -57,6 +52,7 @@ export type SettingsWrapper = {
   radius: number;
   aspect_ratio: string;
   use_swipe: boolean;
+  emoji_size: number;
 };
 
 export type SqlWrapper = {
