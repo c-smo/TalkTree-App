@@ -14,6 +14,13 @@ Diese Version ist für **Endgeräte** gedacht. Informationen zur Bearbeitungssof
 
 ## Neuigkeiten:
 
+### 02.02 - iOS Integration
+Ich habe mich über die Möglichkeiten einer iOS-Integration informiert. Obwohl die EU 2024 ein Gesetz beschlossen hat, das Apple dazu motivieren soll, Geräte endlich für Drittanbieter zu öffnen, ist dies bis dato immer noch nur bedingt möglich. Außerhalb der EU ist es schlicht unmöglich.
+
+Ich bin zwar wirklich froh, dass dieser Konzern so sehr auf unsere Sicherheit bedacht ist, aber ich habe die Vermutung, dass es auch alternative Lösungen gibt, anstatt eine jährliche Gebühr zu verlangen, um eine App als sicher qualifizieren zu können...
+
+Ich gebe noch nicht auf, aber aktuell sieht es nicht gut aus :(
+
 ### 01.02 Nächste Schritte
 Die Version v0.3.0 scheint derzeit stabil zu sein, d.h. mir sind keine Fehler bekannt. Sollte jemandem etwas auffallen, lasst es mich bitte wissen, damit ich es beheben kann.
 
