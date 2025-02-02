@@ -21,7 +21,9 @@ Ich bin zwar wirklich froh, dass dieser Konzern so sehr auf unsere Sicherheit be
 
 Ich gebe noch nicht auf, aber aktuell sieht es nicht gut aus :(
 
-Um diese Neuigkeit aber auf einer positiven Note abzuschließen: Bevor es gar keine Alternative für iPads gibt (eigentlich ist iOS nur wegen iPads interessant, weil diese bereits in den meisten Einrichtungen verfügbar sind), werde ich das Geld lieber investieren um eine Website zu hosten, auf die man mit dem iPad zugreifen kann, um das Programm von dort zu starten. Ich habe auch noch 1-2 Ideen wie ich Apple vielleicht doch überreden kann. Des wird scho ois! :)
+P.S.: Um diese Neuigkeit aber auf einer positiven Note abzuschließen: Bevor es gar keine Alternative für iPads gibt (eigentlich ist iOS nur wegen iPads interessant, weil diese bereits in den meisten Einrichtungen verfügbar sind), werde ich das Geld lieber investieren um eine Website zu hosten, auf die man mit dem iPad zugreifen kann, um das Programm von dort zu starten. Ich habe auch noch 1-2 Ideen wie ich Apple vielleicht doch überreden kann. Des wird scho ois! :)
+
+P.P.S.: Im Worst Case lege ich mir zähneknirschend doch noch einen Developer-Account zu.
 
 ### 01.02 Nächste Schritte
 Die Version v0.3.0 scheint derzeit stabil zu sein, d.h. mir sind keine Fehler bekannt. Sollte jemandem etwas auffallen, lasst es mich bitte wissen, damit ich es beheben kann.
