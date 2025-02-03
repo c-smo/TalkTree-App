@@ -12,27 +12,11 @@ Diese Version ist für **Endgeräte** gedacht. Informationen zur Bearbeitungssof
 
 ---
 
-## Neuigkeiten:
+## Datenschutz
 
-### 02.02 - iOS Integration
-Ich habe mich über die Möglichkeiten einer iOS-Integration informiert. Obwohl die EU 2024 ein Gesetz beschlossen hat, das Apple dazu motivieren soll, Geräte endlich für Drittanbieter zu öffnen, ist dies bis dato immer noch nur bedingt möglich. Außerhalb der EU ist es schlicht unmöglich.
-
-Ich gebe noch nicht auf, aber aktuell sieht es nicht gut aus :(
-
-P.S.: Um diese Neuigkeit aber auf einer positiven Note abzuschließen: Bevor es gar keine Alternative für iPads gibt (eigentlich ist iOS nur wegen iPads interessant, weil diese bereits in den meisten Einrichtungen verfügbar sind), werde ich das Geld lieber investieren um eine Website zu hosten, auf die man mit dem iPad zugreifen kann, um das Programm von dort zu starten. Ich habe auch noch 1-2 Ideen wie ich Apple vielleicht doch überreden kann. Des wird scho ois! :)
-
-P.P.S.: Im Worst Case lege ich mir zähneknirschend doch noch einen Developer-Account zu.
-
-### 01.02 Nächste Schritte
-Die Version v0.3.0 scheint derzeit stabil zu sein, d.h. mir sind keine Fehler bekannt. Sollte jemandem etwas auffallen, lasst es mich bitte wissen, damit ich es beheben kann.
-
-Ich werde jetzt mit der iOS-Implementierung starten. Drückt mir die Daumen – Apple und ich sind im Moment nicht die besten Freunde.
-
-### 31.01 - Neue Kontakt E-Mail
-Ich dachte, die “c-smo@users.noreply.github.com”-Adresse leitet Nachrichten direkt an mich weiter, aber da habe ich mich getäuscht. Tut mir leid, falls jemand vergeblich auf eine Antwort gewartet hat. Ich habe die E-Mail Adresse jetzt ausgetauscht.
+Da sich mehr Leute für das Projekt interessieren als erwartet (vielen herzlichen Dank dafür! 🤭) möchte ich kurz auf das Thema [Datenschutz](https://github.com/c-smo/TalkTree-App/blob/main/TalkTree_App/Devlog/Datenschutz.md) eingehen.
 
 ---
-
 
 ## Download:
 
